@@ -1,233 +1,174 @@
-# Mama Bima Assistant - User Journey Guide
-
-This document outlines the complete journey for the Mama Bima Assistant, from initial admin setup to the end-user experience. Use this guide to understand how all components of the system work together to deliver personalized plan recommendations.
-
-## Table of Contents
-
-- [Admin Setup](#admin-setup)
-- [AI Training](#ai-training)
-- [User Experience](#user-experience)
-- [Continuous Improvement](#continuous-improvement)
-- [Implementation Checklist](#implementation-checklist)
-
-## Admin Setup
-
-### Bot Configuration
-
-1. **Create Your Bot**
-
-   - Log into the admin dashboard
-   - Navigate to Bots > Create New Bot
-   - Set the bot name, avatar, and welcome message
-   - Configure bot status as "Active"
-
-2. **Design Questions**
-
-   - Go to Questions > Create New Question
-   - Create various question types (number, select, text, boolean)
-   - Set possible answers for selection-type questions
-   - Organize questions by category for easy management
-
-3. **Build the Question Flow**
-
-   - Navigate to your bot's Question Flow tab
-   - Add questions in the desired sequence
-   - Set dependencies between questions (conditional logic)
-   - Specify which questions are required vs. optional
-   - Arrange questions to create a natural conversation flow
-
-4. **Configure Service Plans**
-   - Go to Plans > Create New Plan
-   - Define features, pricing, and billing cycle
-   - Add detailed descriptions and highlight key benefits
-   - Set target audience and use cases for each plan
-   - Ensure plans cover a range of user needs and price points
-
-### Recommendation Engine Setup
-
-1. **Configure Recommendation Rules**
-
-   - Set weighting factors for different user responses
-   - Define thresholds for recommending specific plans
-   - Create rules for handling edge cases
-   - Configure confidence score calculation
-
-2. **Set Up Response Templates**
-   - Create templates for recommendation presentation
-   - Customize messaging for different plan types
-   - Configure comparison view layout
-   - Design feedback collection prompts
-
-## AI Training
-
-1. **Initial Training Data**
-
-   - Upload sample conversations and outcomes
-   - Provide examples of ideal recommendation scenarios
-   - Include negative examples to help the model understand boundaries
-
-2. **AI Fine-tuning**
-
-   - Review and adjust model responses
-   - Configure fallback responses
-   - Set up entity recognition for key user needs
-   - Create a knowledge base for common questions
-
-3. **Testing Cycle**
-   - Simulate user conversations to test flow
-   - Verify recommendation accuracy
-   - Test edge cases and unusual requests
-   - Ensure graceful handling of unexpected inputs
-
-## User Experience
-
-### First-time User Journey
-
-1. **Registration & Onboarding**
-
-   - User creates account with email/phone
-   - Sets up profile information
-   - Receives introduction to the AI assistant
-
-2. **Starting a Conversation**
-   - User selects the appropriate bot
-   - Bot presents welcome message
-   - Bot explains the process and sets expectations
-
-### Guided Conversation
-
-1. **Question Sequence**
-
-   - Bot asks questions in the configured sequence
-   - User provides answers through appropriate UI elements
-   - Bot acknowledges responses and provides context
-
-2. **Adaptive Questioning**
-
-   - Questions adapt based on previous answers
-   - Conditional questions appear only when relevant
-   - Follow-up questions clarify ambiguous responses
-
-3. **User Support**
-   - User can ask "Why do you need this information?"
-   - Bot explains the purpose of each question
-   - Help options available throughout the process
-
-### Recommendation Phase
-
-1. **Analysis & Generation**
-
-   - System processes user responses
-   - AI engine evaluates best matches against available plans
-   - Confidence scores calculated for each potential recommendation
-
-2. **Presentation**
-
-   - Bot presents primary recommendation with reasoning
-   - Alternative options shown with comparative advantages
-   - Visual comparison highlights features matching user needs
-
-3. **Exploration**
-   - User can ask details about recommended plans
-   - Bot answers plan-specific questions
-   - Comparison view helps user understand differences
-
-### Decision & Activation
-
-1. **Plan Selection**
-
-   - User selects preferred recommendation
-   - Bot confirms selection and summarizes benefits
-   - Options to modify or explore alternatives
-
-2. **Setup Process**
-
-   - System guides user through subscription process
-   - Payment information collection (if needed)
-   - Confirmation of successful activation
-
-3. **Feedback Loop**
-   - Bot requests feedback on recommendation quality
-   - User rates experience and provides comments
-   - System stores feedback for future improvements
-
-## Continuous Improvement
-
-### Follow-up Engagement
-
-1. **User Check-ins**
-
-   - System initiates follow-up conversations
-   - Gathers feedback on actual usage experience
-   - Identifies opportunities for plan adjustments
-
-2. **Plan Optimization**
-   - Bot offers plan changes based on usage patterns
-   - Suggests upgrades or downgrades when appropriate
-   - Simplifies subscription changes through conversation
-
-### Admin Analysis
-
-1. **Performance Metrics**
-
-   - Track recommendation acceptance rates
-   - Analyze conversation completion rates
-   - Monitor user satisfaction scores
-
-2. **Conversation Refinement**
-
-   - Identify and fix problematic questions
-   - Optimize question flow based on drop-off points
-   - Improve response templates based on feedback
-
-3. **Plan Evolution**
-   - Adjust plans based on user preferences
-   - Introduce new plans to fill identified gaps
-   - Retire or update underperforming options
-
-## Implementation Checklist
-
-### Backend Setup
-
-- [x] Configure database with required schemas
-- [x] Implement authentication system
-- [x] Create API endpoints for all functionality
-- [ ] Set up AI service integration
-- [ ] Implement recommendation algorithms
-
-### Admin Dashboard
-
-- [x] Set up user management system
-- [x] Build bot management interface
-- [x] Create question builder and flow editor
-- [x] Implement plan configuration tools
-- [ ] Design analytics dashboard
-
-### User Interface
-
-- [ ] Develop registration and login screens
-- [ ] Create responsive chat interface
-- [ ] Build question input components
-- [ ] Design recommendation comparison view
-- [ ] Implement feedback collection forms
-
-### AI Components
-
-- [ ] Set up natural language processing
-- [ ] Implement entity extraction
-- [ ] Create recommendation engine
-- [ ] Build training data collection system
-- [ ] Configure continuous improvement loop
-
-## Getting Started
-
-1. Begin with the admin setup to configure your bots and questions
-2. Train the AI with sample conversations
-3. Test the complete user journey with sample users
-4. Gather initial feedback and refine the system
-5. Launch to real users and monitor performance
-
----
-
-This user journey represents the complete lifecycle of the Mama Bima Assistant, demonstrating how it creates value by guiding users through a conversational experience to receive personalized plan recommendations
-# eth.app
+# Earth Kissed Herbs - Website
+
+A beautiful, responsive website for Earth Kissed Herbs, a natural wellness and herbal remedies business founded by Judy Nini. The website showcases the brand's commitment to pure, earth-grown herbal products and holistic wellness services.
+
+## 🌿 Features
+
+- **Responsive Design**: Fully responsive across all device sizes
+- **Modern UI/UX**: Clean, nature-inspired design with smooth animations
+- **Multi-page Structure**: Home, About, Services, Products, and Contact pages
+- **Interactive Elements**: Smooth scroll animations, hover effects, and transitions
+- **Contact Form**: Functional contact form for customer inquiries
+- **SEO Optimized**: Proper meta tags and semantic HTML structure
+- **Performance Optimized**: Fast loading with optimized images and code
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 14 with App Router
+- **Styling**: Tailwind CSS with custom design system
+- **Animations**: Framer Motion for smooth interactions
+- **Icons**: Lucide React for consistent iconography
+- **Typography**: Google Fonts (Playfair Display, Source Sans Pro, Kalam)
+- **Language**: TypeScript for type safety
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd earth-kissed-herbs
+```
+
+2. Install dependencies:
+```bash
+pnpm install
+# or
+npm install
+# or
+yarn install
+```
+
+3. Create environment file:
+```bash
+cp .env.example .env.local
+```
+
+4. Start the development server:
+```bash
+pnpm dev
+# or
+npm run dev
+# or
+yarn dev
+```
+
+5. Open [http://localhost:3000](http://localhost:3000) to view the website.
+
+## 🎨 Design System
+
+### Color Palette
+- **Earth Tones**: Warm browns and tans for grounding
+- **Sage Green**: Primary brand color representing natural healing
+- **Moss Green**: Secondary green for depth and nature
+- **Natural Gradients**: Subtle gradients mimicking natural patterns
+
+### Typography
+- **Headings**: Playfair Display (Serif) for elegance
+- **Body Text**: Source Sans Pro for readability
+- **Accents**: Kalam (Handwritten) for personal touch
+
+### Animations
+- **Page Transitions**: Smooth fade-in animations
+- **Scroll Effects**: Elements animate into view
+- **Hover States**: Interactive feedback on all clickable elements
+- **Loading States**: Smooth transitions between states
+
+## 📄 Pages
+
+### Home (`/`)
+- Hero section with brand introduction
+- Features section highlighting brand values
+- Call-to-action buttons for products and about page
+
+### About (`/about`)
+- Brand story and mission
+- Founder profile (Judy Nini)
+- Core values and approach
+
+### Services (`/services`)
+- Custom Herbal Blends
+- Wellness Consultations
+- Natural Remedies & Education
+- Skincare & Self-Care Formulations
+
+### Products (`/products`)
+- Complete herb catalog with descriptions
+- Usage instructions and benefits
+- Quality assurance information
+
+### Contact (`/contact`)
+- Contact form with validation
+- Business information
+- Multiple contact methods
+- FAQ section
+
+## 🛠️ Development
+
+### Project Structure
+```
+src/
+├── app/
+│   ├── about/
+│   ├── contact/
+│   ├── products/
+│   ├── services/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── HeroSection.tsx
+│   └── FeaturesSection.tsx
+└── lib/
+    └── utils.ts
+```
+
+### Key Scripts
+- `pnpm dev`: Start development server
+- `pnpm build`: Build for production
+- `pnpm start`: Start production server
+- `pnpm lint`: Run ESLint
+- `pnpm lint:ts`: Run TypeScript checks
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: 320px - 767px
+- **Tablet**: 768px - 1023px
+- **Desktop**: 1024px and above
+
+## 🌟 Brand Identity
+
+**Mission**: Where nature's healing traditions meet modern wellness
+
+**Values**:
+- **Purity**: Clean, natural ingredients without additives
+- **Knowledge**: Herbal wisdom and careful formulation
+- **Intention**: Small-batch crafting with care
+- **Community**: Education and wellness support
+
+**Tagline**: "Naturally grown. Thoughtfully prepared. Earth-aligned."
+
+## 📞 Contact Information
+
+- **Phone**: +254 704 154 839
+- **Email**: dyjunini@gmail.com
+- **Location**: Kenya
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is created for Earth Kissed Herbs. All rights reserved.
+
+## 🙏 Acknowledgments
+
+- Earth Kissed Herbs team for brand vision and content
+- Nature-inspired design community for aesthetic guidance
+- Open source community for the amazing tools and libraries

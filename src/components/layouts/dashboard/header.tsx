@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail, Leaf } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { navGroups } from "./data/nav.data";
 import MobileMenu from "./mobile-menu";
 import ThemeToggle from "./theme-toggle";
+import Image from "next/image";
 
 export default function Header() {
   const { scrollY } = useScroll();
@@ -29,23 +30,21 @@ export default function Header() {
       >
         <div className="px-6 py-4">
           <div className="flex h-14 items-center justify-between">
-            {/* Logo */}
+           {/* Logo */}
             <Link href="/" className="flex items-center space-x-3 group">
               <motion.div
-                whileHover={{ rotate: 360, scale: 1.1 }}
-                transition={{ duration: 0.8 }}
-                className="p-3 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-2xl shadow-lg shadow-emerald-500/25 group-hover:shadow-emerald-500/40 transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                className="relative h-14 w-32"
               >
-                <Leaf className="h-6 w-6 text-white" />
+                <Image 
+                  src="/logo.png" 
+                  alt="Earth Kissed Herbs Logo" 
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </motion.div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-foreground tracking-tight">
-                  Earth Kissed Herbs
-                </span>
-                <span className="text-sm text-muted-foreground -mt-1 hidden sm:block font-medium">
-                  naturally yours
-                </span>
-              </div>
             </Link>
 
             {/* Desktop Navigation */}
