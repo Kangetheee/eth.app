@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ------------------------------------------
+   Theme Variables
+------------------------------------------- */
+@theme inline {
+  /* Custom Theme Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-emerald-glass: color(display-p3 0.259 0.988 0.608 / 0.15);
+  --color-emerald-glass-strong: color(display-p3 0.259 0.988 0.608 / 0.25);
+
+  --color-emerald-glass-dark: color(display-p3 0.259 0.988 0.608 / 0.10);
+  --color-emerald-glass-strong-dark: color(display-p3 0.259 0.988 0.608 / 0.20);
+
+  --color-glass-border: color(display-p3 0.259 0.988 0.608 / 0.25);
+  --color-glass-border-dark: color(display-p3 0.259 0.988 0.608 / 0.20);
+
+  --color-glass-shadow: color(display-p3 0.259 0.988 0.608 / 0.20);
+  --color-glass-shadow-dark: color(display-p3 0.259 0.988 0.608 / 0.15);
+}
+
+/* ------------------------------------------
+   Global Page Style
+------------------------------------------- */
+body {
+  @apply font-sans antialiased;
+}
+
+/* ------------------------------------------
+   GLASS EFFECT – CLASS-BASED (NO @apply!)
+------------------------------------------- */
+.emerald-glass,
+.emerald-glass-strong {
+  backdrop-filter: blur(12px);
+  border-width: 1px;
+  box-shadow: 0 8px 32px var(--color-glass-shadow);
+  transition: all 0.3s ease;
+}
+
+/* Light Mode */
+.emerald-glass {
+  background: var(--color-emerald-glass);
+  border-color: var(--color-glass-border);
+}
+
+.emerald-glass-strong {
+  background: var(--color-emerald-glass-strong);
+  border-color: var(--color-glass-border);
+  box-shadow: 0 12px 48px var(--color-glass-shadow);
+}
+
+/* Dark Mode */
+.dark .emerald-glass {
+  background: var(--color-emerald-glass-dark);
+  border-color: var(--color-glass-border-dark);
+  box-shadow: 0 8px 32px var(--color-glass-shadow-dark);
+}
+
+.dark .emerald-glass-strong {
+  background: var(--color-emerald-glass-strong-dark);
+  border-color: var(--color-glass-border-dark);
+  box-shadow: 0 12px 48px var(--color-glass-shadow-dark);
+}
+
+/* ------------------------------------------
+   BUTTON USING THE GLASS CLASSES
+------------------------------------------- */
+
+.btn-glass {
+  @apply px-4 py-2 rounded-xl text-emerald-300 transition-all duration-300 font-medium;
+}
+
+/* Use class normally — NOT with @apply */
+.btn-glass {
+  /* apply emerald glass */
+}
+.btn-glass:hover {
+  /* apply strong glass */
+}
+
+.btn-glass {
+  composes: emerald-glass;
+}
+.btn-glass:hover {
+  composes: emerald-glass-strong;
+}
